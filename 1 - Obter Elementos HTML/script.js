@@ -10,11 +10,11 @@ function show(){
   console.log(elementsByTagName)
 
   // Obter vários elementos (NodeList) a partir de uma query selector
-  const elementsByQuerySelector = document.querySelectorAll("#contact-input")
+  const elementsByQuerySelector = document.querySelectorAll(".contact-input")
   console.log(elementsByQuerySelector)
 
   // Obter vários elementos (NodeList) a partir do atributo name
-    const nome = document.getElementsByName("contat1")
+    const nome = document.getElementsByName("contact1")
     console.log(nome)
 
   // Obter vários elementos (NodeList) a partir de uma query (semelhante aos seletores do CSS)
@@ -22,6 +22,6 @@ function show(){
     console.log(nomes)
 
   // Obter um elemento a partir de uma query (o primeiro elemento a corresponder)
-    const contato = document.querySelector("#contact-lis > li > label")
+    const contato = document.querySelector("#contact-list > li > label")
     console.log(contato)
 }
