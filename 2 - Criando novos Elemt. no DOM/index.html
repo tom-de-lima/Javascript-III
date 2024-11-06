@@ -3,38 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula: Criar Novos Elementos no DOM</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Obtendo Elementos HTML do DOM - JS.</title>
 </head>
 <body>
-    <header>
-        <h1>Curso Javascript</h1>
-        <h2>Obtendo Elementos HTML do DOM</h2>
-    </header>
-    <section>
-        <h3>Contatos</h3>
+    <h1>Criando Novos Elementos no DOM</h1>
 
-        <ul id="contact-list">
-            <li>
-                <label for="contact1">Contato 1:</label>
-                <input type="text" id="contatc1" name="contact1" class="contact-input">
-            </li>
-            <li>
-                <label for="contact2">Contato 2></label>
-                <input type="text" id="contatct2" name="contact2" class="contact-input">
-            </li>
-            <li>
-                <label for="ocntact3">Contato 3:</label>
-                <input type="text" id="contact3" name="contact3" class="contact-input">
-            </li>
-        </ul>
-        <button onclick="show()">Exibir</button>
+    <button onclick="addInput()">Adcionar Input</button> <!--Chamada da função que cria novos elementos em javascript-->
 
-    </section>
-    
+    <ul id="inputs"></ul>
 </body>
-<script src="./script.js"></script>
-<footer>
-    <p>Todos os direitos reservados &copy; 2024</p>
-</footer>
+<script src="./script.js"></script> <!--Aqui será acrescentado o novo elemento via javascript-->
 </html>

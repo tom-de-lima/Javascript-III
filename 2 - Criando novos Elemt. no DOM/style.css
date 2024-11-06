@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,29 +7,8 @@ body {
     background-color: #f9f9f9;
     color: #333;
     list-style: 1.8;
-}
-
-header {
-    background-color: #333;
-    color: #f9f9f9;
-    padding: 12px;
-    text-align: center;
-}
-
-section{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
     text-align: justify;
-}
-
-footer{
-    background-color: #333;
-    color: #fff;
-    padding: 12px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-style: italic;
 }
