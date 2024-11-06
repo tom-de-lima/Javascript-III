@@ -1,0 +1,14 @@
+
+Exercício 2: Adicionar Vários Campos de Entrada com Botão de Remover
+
+Objetivo: Crie uma função que adicione múltiplos campos de entrada, cada um com um botão para removê-lo.
+
+Instruções:
+
+1 Crie um botão Adicionar campo que, ao ser clicado, chama uma função addField().
+2 A função addField() deve adicionar um novo <li> contendo:
+    -Um <input type="text">.
+    -Um botão Remover que, ao ser clicado, remova o campo correspondente.
+3 Cada campo de entrada com botão deve ser adicionado dentro de uma <ul> com o id="input-list".
+
+Dica: Use parentNode.removeChild() para remover o <li> ao clicar em Remover.

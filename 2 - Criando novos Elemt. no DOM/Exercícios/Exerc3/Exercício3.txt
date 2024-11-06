@@ -1,0 +1,17 @@
+Exercício 3: Adicionar Campo com Valor Padrão e Número Incremental
+
+Objetivo: Crie uma função que adicione um campo de entrada com um texto padrão que incrementa a cada novo campo.
+
+Instruções:
+
+1 Crie um botão Adicionar novo campo numerado.
+2 Ao clicar no botão, chame uma função addNumberedField() que:
+3 Adicione um novo item <li> dentro de uma lista <ul id="numbered-list">.
+4 Dentro do <li>, crie um <input type="text"> com um valor padrão no formato "Campo #X", onde X é o número do campo (1, 2, 3...).
+5 Cada vez que um novo campo for adicionado, o número X deve ser incrementado.
+
+Exemplo de Saída:
+
+Primeiro campo: "Campo #1".
+Segundo campo: "Campo #2".
+Terceiro campo: "Campo #3".
