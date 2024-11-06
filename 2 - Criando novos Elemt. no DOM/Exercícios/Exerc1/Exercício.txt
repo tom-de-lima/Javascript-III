@@ -1,0 +1,10 @@
+Exercício 1: Adicionar Itens de Lista
+
+1.Crie uma página HTML com uma <ul> vazia e um campo de entrada de texto.
+2.Adicione um botão que, quando clicado, pega o texto do campo de entrada e adiciona um novo <li> com esse texto na <ul>.
+3.Limpe o campo de entrada após cada adição.
+
+Dicas:
+
+Use document.createElement() para criar o <li>.
+Use element.innerText para definir o texto do <li>.
