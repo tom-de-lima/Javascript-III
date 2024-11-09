@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Exerc3.css">
+    <title>Exercício 3 - Criar Elemento DOM</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício 3 Criando Elemento no DOM a partir de JS</h1>
+    </header>
+    <Section>
+        <h2>Exercício:  Adicionar Campo com Valor Padrão e Número Incremental</h2>
+
+        <p>
+            Instruções:
+
+            <ul> 
+                <li>1 Crie um botão Adicionar novo campo numerado.</li>
+                <li>2 Ao clicar no botão, chame uma função addNumberedField() que:</li>
+                <li>3 Adicione um novo item "/li" dentro de uma lista "ul id="numbered-list">"/ul".</li>
+                <li>4 Dentro do "li", crie um "input type="text" com um valor padrão no formato "Campo #X", onde X é o número do campo (1, 2, 3...).</li>
+                <li>5 Cada vez que um novo campo for adicionado, o número X deve ser incrementado.</li>   
+            </ul>
+            <br>
+            Exemplo de Saída:
+
+            <ul>
+                <li>Primeiro campo: "Campo #1".</li>
+                <li>Segundo campo: "Campo #2".</li>
+                <li>Terceiro campo: "Campo #3".</li>
+            </ul>
+
+        </p>
+    </Section>
+    <div>
+        <button onclick="addNumberedField()">Add novo campo enumerado</button>
+    </div>
+    <div>
+        <ul id="numbered-list"></ul>
+    </div>
+    
+</body>
+<footer>
+    <p>Feito com JS puro, sem uso de frameworks ou bibliotecas.</p>
+    <p>Autor: Tom de Lima</p>
+    <p>Data: 14/06/2023</p>
+    <p>Versão: 1.0.0</p>
+</footer>
+<script src="./Exerc3.js"></script>
+</html>
