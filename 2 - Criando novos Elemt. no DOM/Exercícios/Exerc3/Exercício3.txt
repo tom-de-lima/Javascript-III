@@ -6,9 +6,9 @@ Instruções:
 
 1 Crie um botão Adicionar novo campo numerado.
 2 Ao clicar no botão, chame uma função addNumberedField() que:
-3 Adicione um novo item <li> dentro de uma lista <ul id="numbered-list">.
-4 Dentro do <li>, crie um <input type="text"> com um valor padrão no formato "Campo #X", onde X é o número do campo (1, 2, 3...).
-5 Cada vez que um novo campo for adicionado, o número X deve ser incrementado.
+        -Adicione um novo item <li> dentro de uma lista <ul id="numbered-list">.
+        -Dentro do <li>, crie um <input type="text"> com um valor padrão no formato "Campo #X", onde X é o número do campo (1, 2, 3...).
+        -Cada vez que um novo campo for adicionado, o número X deve ser incrementado.
 
 Exemplo de Saída:
 
