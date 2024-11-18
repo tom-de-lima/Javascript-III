@@ -13,8 +13,22 @@
     <section>
         <h2>Escalação do Time</h2>
         <br>
-
-        <div><button>Escalar</button></div>
+        <div id="input_posicao">
+            <label for="posicao">Posição do Jogador: </label>
+            <input type="text" id="posicao" name="posicao">
+        </div>
+        <div id="input_nome">
+            <label for="nome">Nome do Jogador: </label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div id="input_camisa">
+            <label for="ncamisa">Número da Camisa: </label>
+            <input type="text" id="ncamisa" name="camisa">
+        </div>
+        <div><button onclick="escalar()">Escalar Jogador</button>
+             <button onclick="remover()">Remover Jogador</button>
+        </div>
+        <div id="lista"></div>
     </section>
 </body>
 <footer>
