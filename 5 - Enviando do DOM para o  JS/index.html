@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>.value;.value;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Enviando do DOM para JS</title>
+</head>
+<body>
+    <header>
+        <h1>Enviando Elementos do DOM para JS</h1>
+    </header>
+    <section>
+        <h2>Aula: Enviando Elementos do DOM para JS</h2>
+        <br><br>
+        <label for="user">Nome do Usuário: </label>
+        <input type="text" id="user" name="usuario">
+        <br>
+        <label for="password">Senha: </label>
+        <input type="password" id="password" name="senha">
+        <br>
+        <label for="confirmPws">Confirmar Senha: </label>
+        <input type="password" id="confirmPws" name="confirmarSenha">
+        <br><br>
+        <!--this.parentNode: Refere-se ao elemento pai do botão. parentNode é uma propriedade que retorna o elemento HTML que contém o botão, como uma <div>, <form>, etc.-->
+        <button onclick="send(this.parentNode)">Enviar Valores para JS</button>
+    </section>
+</body>
+<script src="./script.js"></script>
+<footer>
+    <p>Todos os direitos reservados &copy; 2024</p>
+</footer>
+</html>
