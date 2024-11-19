@@ -72,42 +72,52 @@ function escalar() {
 
 function remover() {
   const listaRemover = document.getElementById("lista")
-  // Obtém o elemento HTML com o id "lista", onde os jogadores estão listados.
+  // Obtém o elemento principal da lista onde os jogadores estão armazenados.
 
   const removeJogador = document.getElementById("remove")
-  // Obtém o elemento de entrada onde o usuário insere o número da camisa para remoção.
+  // Obtém o campo de entrada onde o usuário insere o número da camisa para remoção.
 
   const confirma = confirm(
     "Confirma a remoção do jogador de camisa número: " +
       removeJogador.value +
       "?"
   )
-  // Exibe uma caixa de confirmação pedindo para confirmar a remoção do jogador.
+  // Exibe uma caixa de confirmação para a remoção do jogador com o número especificado.
 
   if (confirma) {
     const itemUl = listaRemover.querySelectorAll("ul")
-    // Obtém todos os elementos `<ul>` dentro do "listaRemover".
+    // Obtém todas as listas `<ul>` dentro do elemento "listaRemover".
 
-    for (ul of itemUl) {
+    let jogadorEncontrado = false
+    // Variável para rastrear se o jogador foi encontrado durante a busca.
+
+    for (let ul of itemUl) {
       const itemLi = ul.querySelectorAll("li")
-      // Itera sobre os itens `<ul>` e obtém todos os `<li>` dentro de cada lista.
+      // Para cada `<ul>`, obtém todos os itens `<li>`.
 
-      for (li of itemLi) {
+      for (let li of itemLi) {
         if (li.innerText.includes(removeJogador.value)) {
           listaRemover.removeChild(ul)
           alert("Jogador removido da escalação com sucesso!")
-          // Verifica se o texto do `<li>` contém o número da camisa informado.
-          // Se encontrado, remove o `<ul>` correspondente e exibe uma mensagem de sucesso.
-        } else {
-          alert("Número de camisa inexistente.")
-          // Exibe uma mensagem de erro caso o número da camisa não seja encontrado.
+          jogadorEncontrado = true
+          break
+          // Se o número da camisa for encontrado, remove o `<ul>` correspondente, exibe uma mensagem e sai do loop.
         }
       }
+
+      if (jogadorEncontrado) {
+        break
+        // Interrompe o loop principal se o jogador já foi encontrado e removido.
+      }
+    }
+
+    if (!jogadorEncontrado) {
+      alert("Número de camisa inexistente.")
+      // Exibe uma mensagem de erro se o número da camisa não for encontrado em nenhum item.
     }
   } else {
     alert("A remoção do jogador não foi confirmada.")
-    return false
-    // Exibe um alerta caso o usuário cancele a confirmação da remoção.
+    // Exibe um alerta caso o usuário cancele a remoção.
   }
 
   removeJogador.value = ""
